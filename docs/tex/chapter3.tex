@@ -1,0 +1,88 @@
+This section explores the shrinkage estimation of the unconditional correlation matrix in the DCC model. We begin with a brief survey of the literature on random matrix theory and then present the non-linear shrinkage estimator introduced in \textcite{LEDOITWOLF2012}. 
+
+\subsection{Literature Review}
+
+Random matrix theory has its origins in the analysis of the spectrum of large-dimensional random matrices. One of the earliest works in this field is that of \textcite{WISHART1928}, who studied and derived the joint probability density of sample covariance matrices in multivariate normal populations. The literature on random matrix theory was subsequently broadened by the pioneering works of \textcite{DYSON1953}, \textcite{WIGNER1958} and \textcite{MP1967}, among others. A fundamental result in this literature is due to \textcite{MP1967}, who derived the asymptotic relationship between the distributions of population and sample covariance matrix eigenvalues in the large-dimensional limit. In particular, they first show that if the distribution of the population eigenvalues converges in the large-$N$ limit to a limiting distribution and certain regularity conditions are met, then there exists a non-random limiting sample distribution to which the distribution of the sample eigenvalues converges in probability at all points of continuity. Then, they derive an equation which relates the two limiting distributions and demonstrate how to solve it in certain examples where the limiting distribution of the population eigenvalues is known. Other major contributions to the field are due to the collective works of \textcite{SILVERSTEINBAI1995}, \textcite{SILVERSTEIN_CHOI_1995} and \textcite{SILVERSTEIN1995}, who provided additional analytical results and supplied further details on the asymptotic distribution of sample eigenvalues.
+
+Basic analytical results in the random matrix theory literature indicate that the sample covariance matrix is a biased estimator in the large-dimensional limit. This is due to the fact that under large-dimensional asymptotics, the asymptotic framework in which both the matrix dimension, $N$, and the sample size, $T$, tend to infinity together, the eigenvalues of the sample covariance matrix are substantially biased, with the largest eigenvalues biased upward and the smallest ones biased downward. The crucial factor is the ratio of the matrix dimension to the sample size, $c := N/T$, which is often called the concentration ratio and is bounded away from zero. When this ratio is small, the bias in the sample eigenvalues is small and may be neglected, whereas when it is large, the bias in the sample eigenvalues can be potentially very large and thus not negligible. Furthermore, with many of the sample eigenvalues biased toward zero, the sample covariance matrix will be heavily ill-conditioned, which means that inverting it will dramatically increase estimation error. \textcite{LEDOITWOLF2004} propose a solution that involves shrinking the sample covariance matrix toward a multiple of the identity matrix. They show that, by means of shrinkage, it is possible to obtain an improved estimator over the sample covariance matrix that is always well-conditioned. They further show that shrinkage takes place at the level of the eigenvalues and that they are all pulled toward a central target value, hence reducing the dispersion of the eigenvalues and also possibly reducing bias. In a similar approach, \textcite{LEDOITWOLF2004_HONEY} suggest shrinkage to an equicorrelation matrix. They find that shrinkage can meaningfully reduce portfolio tracking error and substantially increase a manager's realized information ratio. These methods are generally called linear shrinkage because of the fact that they apply the same shrinkage intensity to all sample eigenvalues.
+
+Although the linear shrinkage methods discussed above tend to reduce the bias of the sample eigenvalues somewhat, they do not eliminate it completely. This is because, even after shrinkage, the shrunk sample eigenvalues are biased. \textcite{LEDOITPECHE2011} develop an oracle shrinkage formula that produces non-linear shrinkage intensities for each of the sample eigenvalues and that is optimal under the Frobenius norm of the distance between the shrinkage estimator and the true covariance matrix. They show that their formula lays the groundwork for consistent estimation of the population eigenvalues from the sample ones. \textcite{LEDOITWOLF2012} subsequently use this formula to develop a non-linear shrinkage estimator which is constructed from the eigenvector of the sample covariance matrix and estimates of the population eigenvalues obtained from estimating the oracle non-linear shrinkage formula of \textcite{LEDOITPECHE2011}. Subsequently, \textcite{LEDOITWOLF2015} introduced a numerical method for estimation of the population eigenvalues which is based on the numerical inversion of the discretized Marčenko-Pastur equation, which they call the QuEST function. They show that inverting this function yields consistent estimates of the population eigenvalues, and the resulting covariance matrix estimator is optimal among the class of rotation-equivariant estimators. The details of the QuEST function and its numerical implementation can be found in \textcite{LEDOITWOLF2017_QUEST}.
+
+\subsection{Basic Asymptotic Framework}
+Let $\varepsilon_t$ denote the vector of standardized returns at time $t$ and $\mathcal{E}$ denote the $N \times T$ matrix of standardized returns. The unconditional covariance matrix of $\varepsilon_t$ is defined as:
+\begin{align}
+	\Sigma \equiv \mathbb{E}[ \varepsilon_t \varepsilon_t^\prime ].
+\end{align}
+The sample covariance matrix, denoted $\widehat{S}$, is given by:
+\begin{align}
+	\widehat{S} = \frac{1}{T} \mathcal{E}\mathcal{E}^\prime.
+\end{align}
+In general, the sample covariance matrix $\widehat{S}$ does not converge in probability to the population covariance matrix $\Sigma$. Let $\tau = \left( \tau_{1}, \tau_2, \dots, \tau_N \right)$ denote a system of eigenvalues of the population covariance matrix, sorted in increasing order, and $V = \left( v_1, v_2, \dots , v_N \right)$ denote a system of corresponding eigenvectors. We define the empirical distribution function of the population eigenvalues as $H_T(t) = N^{-1}\sum_{i=1}^N \mathbb{I}_{[\tau_i,\infty]}(t)$, where $\mathbb{I}$ is the indicator function and the subscript $T$ emphasizes the dependence of the empirical distribution function on the sample size. Also let $\lambda = (\lambda_1, \lambda_2, \dots , \lambda_N)$ denote a system of eigenvalues of the sample covariance matrix, sorted in increasing order, and $u = (u_1, u_2, \dots, u_N)$ denote a system of corresponding sample eigenvectors. The empirical distribution function of the sample eigenvalues is defined as $F_T(t) = N^{-1}\sum_{i=1}^N \mathbb{I}_{[\lambda_i, \infty]}(t)$. Furthermore, let $\underline{F}_T$ denote the empirical distribution function of the eigenvalues of the companion matrix defined as:
+\begin{align}
+	\underline{S} = \frac{1}{T} \mathcal{E}^\prime \mathcal{E}.
+\end{align} 
+
+The empirical distribution functions $F_T$ and $\underline{F}_T$ differ only in $|T - N|$ zero eigenvalues. \textcite{MP1967} show that if $H_T(t)$ converges weakly to a limit law denoted $H$, then there exists a limiting spectral distribution $\underline{F}$ to which the empirical distribution function $\underline{F}_T$ converges in probability at all points of continuity except at zero:
+
+\begin{align}
+	\forall x \in \mathbb{R} \setminus \{0\} : \underline{F}_T(x) \overset{p}{\to} \underline{F}(x).
+\end{align}
+
+Furthermore, they show that the limiting distribution functions $H$ and $\underline{F}$ are related through the Stieltjes transform of $\underline{F}$ by the following equation:
+\begin{align}
+	m_{\underline{F}}(z) = - \left( z - \int \frac{c\, dH(\tau)}{1 + \tau m_{\underline{F}}(z)} \right)^{-1}. \label{eq:sec3_mp}
+\end{align}
+The equation above is known as the Marčenko-Pastur equation. In this equation, $c=N/T$ is the concentration ratio and $m_{\underline{F}}$ is the Stieltjes transform of the limiting distribution function $\underline{F}$. For a generic non-decreasing function $G(\lambda)$ defined over the real line, the Stieltjes transform is defined as:
+\begin{align}
+	\forall z \in \mathbb{C}^{+} : m_{G}(z) = \int \frac{1}{\lambda - z} \, dG(\lambda), \label{eq:sec3_stieltjes}
+\end{align}
+where $\mathbb{C}^{+}$ denotes the upper half of the complex plane with strictly positive imaginary component. The Stieltjes transform provides a convenient way of characterizing spectral distribution functions and lends itself to the well-known inversion formula:
+\begin{align}
+	G(b) - G(a) = \lim_{\eta \to 0^{+}} \frac{1}{\pi} \int_{a}^b Im[m_G(\xi + i\eta)]\, d\xi, \label{eq:sec3_inv}
+\end{align}
+if $G$ is continuous at $a$ and $b$. In the equation above, and in the remainder of the present article, we shall use the notations $Re[z]$ and $Im[z]$ to indicate the real and imaginary parts of the complex number $z$.
+
+Given the definition of the Stieltjes transform \eqref{eq:sec3_stieltjes}, the meaning of the Marčenko-Pastur equation \eqref{eq:sec3_mp} is now clear. Solving this equation for $m_{\underline{F}}$, one obtains the Stieltjes transform of the limiting spectral distribution $\underline{F}$, which can then be inverted by the inversion formula \eqref{eq:sec3_inv} to find $\underline{F}$ at all points on its support on the real line.
+
+The original formulation of \textcite{MP1967} involves the limiting spectral distribution of the companion matrix rather than that of the sample covariance matrix. \textcite{SILVERSTEIN1995} reformulates the Marčenko-Pastur equation in terms of the Stieltjes transform of the limiting distribution of the sample covariance matrix instead. This formulation states that $m := m_{F}$, the Stieltjes transform of $F$, is the unique solution in the set:
+\begin{align}
+	\left\{ m\in \mathbb{C} : - \frac{1-c}{z} + cm \in \mathbb{C}^{+} \right\}
+\end{align}
+to the equation:
+\begin{align}
+	\forall z \in \mathbb{C}^{+} : m_F(z) = \int_{\mathbb{R}} \frac{1}{\tau [ 1 - c - czm_F(z) ] - z} \, dH(\tau).
+\end{align}
+Furthermore, \textcite{SILVERSTEIN_CHOI_1995} show that the probability mass of $F$ at zero is given by:
+\begin{align}
+	F(0) = \max \left\{ 1 - \frac{1}{c}, H(0) \right\}.
+\end{align}
+
+\subsection{Estimation of Population Covariance Matrix Eigenvalues}
+Now that we have established the basic asymptotic framework, we can turn our attention to the estimation of population covariance matrix eigenvalues. The equations introduced in the preceding subsection establish a link between the asymptotic distributions of the sample and population eigenvalues. More specifically, they provide a solution for finding the limiting spectral distribution of the sample covariance matrix, given that the limiting spectral distribution of the population covariance matrix is known. In practice, however, we would want to do the opposite and find the distribution of the population eigenvalues given the sample eigenvalues. Furthermore, these relationships hold only in the limit $N,T \to \infty$, whereas in practice these quantities are always finite. 
+
+
+\subsection{lalala}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

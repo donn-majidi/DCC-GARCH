@@ -1,0 +1,128 @@
+\documentclass[12pt,a4]{article} % This defines the style of your paper
+%\usepackage[top = 2.5cm, bottom = 2.5cm, left = 2.5cm, right = 2.5cm]{geometry} 
+
+% Unfortunately, LaTeX has a hard time interpreting German Umlaute. The following two lines and packages should help. If it doesn't work for you please let me know.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry} 
+\usepackage{blindtext}
+\usepackage{parskip}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepackage{hyphenat}
+\usepackage{soul}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{braket}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	citecolor=blue,
+}
+\usepackage{titletoc}
+%\usepackage[style=authoryear, backend=biber]{biblatex}
+%\usepackage[style=authoryear, natbib=true, backend=biber]{biblatex}
+\usepackage[
+style=authoryear, 
+maxcitenames=2, 
+%    mincitenames=1, 
+uniquelist=false, 
+backend=biber
+]{biblatex}
+\addbibresource{references.bib} % The name of your file
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\newcommand{\indep}{\perp \! \! \! \perp}
+
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% The following two packages - multirow and booktabs - are needed to create nice looking tables.
+\usepackage{multirow} % Multirow is for tables with multiple rows within one cell.
+\usepackage{booktabs} % For even nicer tables.
+
+% As we usually want to include some plots (.pdf files) we need a package for that.
+\usepackage{graphicx} 
+
+% The default setting of LaTeX is to indent new paragraphs. This is useful for articles. But not really nice for homework problem sets. The following command sets the indent to 0.
+\usepackage{setspace}
+\setlength{\parindent}{0in}
+
+% Package to place figures where you want them.
+\usepackage{float}
+
+% The fancyhdr package let's us create nice headers.
+\usepackage{fancyhdr}
+
+\onehalfspacing
+%\doublespacing
+
+\title{\textbf{Large Dimensional Portfolio Optimization}}
+\author{Supervisor: Professor Giuseppe Cavaliere \quad Defended by: Shahriyar Majidi \\\\ University of Bologna}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\begin{center}
+		\textbf{Abstract}
+	\end{center}
+	
+	\newpage
+	\tableofcontents
+	\setcounter{tocdepth}{2} % 1 = Sections only, 2 = Subsections, etc.
+	\newpage
+	
+	\section{Introduction}\label{sec:intro}
+	\input{chapter1-1}
+	\newpage
+	
+	\section{Maximum Likelihood Estimation of the DCC Model}\label{sec:dcc}
+	\input{chapter2-1}
+	
+	\section{Shrinkage Estimation of the Unconditional Correlation Matrix}\label{sec:shrink}
+	\input{chapter3}
+	\newpage
+	
+	\section{Simulation Analysis}\label{sed:simul}
+	\input{chapter5}
+	\newpage
+	
+	\section{Applications to Real Data}\label{sec:empirics}
+	\input{chapter6}
+	\newpage
+	
+	\section{Conclusion}\label{sec:conclusion}
+	\input{chapter7}
+	\newpage
+	
+	\newpage
+	\printbibliography[title={References}]
+\end{document}

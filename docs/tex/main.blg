@@ -1,0 +1,22 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[83] biber:340> INFO - === Thu Oct 22, 2026, 15:05:51
+[96] Biber.pm:419> INFO - Reading 'main.bcf'
+[150] Biber.pm:979> INFO - Found 21 citekeys in bib section 0
+[161] Biber.pm:4419> INFO - Processing section 0
+[170] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[171] bibtex.pm:1713> INFO - LaTeX decoding ...
+[204] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[336] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[336] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[336] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[336] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[358] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[365] bbl.pm:763> INFO - Output to main.bbl
+[365] Biber.pm:131> WARN - legacy month field 'April' in entry 'ELW2019' is not an integer - this will probably not sort properly.
+[365] Biber.pm:131> WARN - legacy month field 'December' in entry 'WISHART1928' is not an integer - this will probably not sort properly.
+[365] Biber.pm:131> WARN - legacy month field 'Dec' in entry 'DYSON1953' is not an integer - this will probably not sort properly.
+[365] Biber.pm:131> WARN - legacy month field 'apr' in entry 'MP1967' is not an integer - this will probably not sort properly.
+[365] Biber.pm:131> WARN - legacy month field 'April' in entry 'LEDOITWOLF2015' is not an integer - this will probably not sort properly.
+[365] Biber.pm:131> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[365] Biber.pm:133> INFO - WARNINGS: 6

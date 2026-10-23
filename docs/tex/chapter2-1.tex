@@ -1,0 +1,113 @@
+This section introduces the notation and presents the DCC model as originally proposed by \textcite{ENGLE2002}. Full-information maximum likelihood estimation is considered, and a three-step approach to estimating the model parameters is proposed.
+
+\subsection{Basic Framework}
+Let $r_{i,t}$ denote the log return on asset $i$ at time $t$ with $i$ covering the range of integers from $1$ to $N$. Let $X_t = (r_{1,t}, r_{2,t}, \dots, r_{N,t})^\prime$ be the $N \times 1$ vector of the log returns and $\mathcal{F}_{t-1}$ the $\sigma$-algebra induced by the full history of returns up to time $t-1$. Throughout this thesis it is assumed that the return\footnote{For the sake of brevity, log returns will from now on be referred to simply as returns. If it is necessary to distinguish between the two, the distinction will be made explicit.} process is covariance stationary with zero conditional mean, $\mathbb{E}[X_t | \mathcal{F}_{t-1}] = 0$, and an $\mathcal{F}_{t-1}$-measurable conditional covariance matrix driven by the DCC process. Let $Z_t$ be an $N \times 1$ vector of independently and identically distributed (i.i.d.) random variables with mean zero and unit variance. The return process is then defined as the product of an $\mathcal{F}_{t-1}$-measurable function $H^{1/2}(\mathcal{F}_{t-1})$ and the random vector $Z_t$:
+\begin{align}
+	X_t = H^{1/2}(\mathcal{F}_{t-1})Z_t.
+\end{align}
+
+From the representation above, one can see that the conditional mean and covariance of the return process are given by:
+\begin{align}
+	\mathbb{E}[X_t|\mathcal{F}_{t-1}] &= H^{1/2}(\mathcal{F}_{t-1})\mathbb{E}[Z_t | \mathcal{F}_{t-1}] = 0, \\
+	\operatorname{Cov}(X_t|\mathcal{F}_{t-1}) &= H(\mathcal{F}_{t-1}) \operatorname{Cov}(Z_t|\mathcal{F}_{t-1}) = H(\mathcal{F}_{t-1}).
+\end{align}
+
+The key idea in multivariate GARCH models is to model the conditional covariance matrix parametrically through an autoregressive process that involves lagged values of the returns and their covariances. There exist numerous methods to achieve this end. For a survey, see \textcite{BAUWENS}. In the following, the DCC model, one of the most widely used models in the literature, is described.
+
+\subsection{DCC Model}
+One way to model the conditional covariance matrix is via the volatility-correlation decomposition. This yields the following decomposition for the matrix $H_t$:
+\begin{align}
+	H_t = D_t R_t D_t, \label{eq:sec2_vol-corr-decomp}
+\end{align}
+where $D_t$ is the diagonal matrix of conditional volatilities of the individual return series, $d_{i,t}$, and $R_t$ is the conditional correlation matrix. $R_t$ can either be fixed or change over time. If it is fixed, it is normally estimated by the sample correlation matrix of the standardized (or devolatilized) returns, which are obtained by scaling the returns by their conditional volatilities: $\varepsilon_{t} = D_t^{-1}X_t$. This is in essence the CCC (constant conditional correlation) model of \textcite{BOLLERSLEV1990}, which assumes that although volatilities may change over time, conditional correlations remain constant. The assumption of time-invariant correlations, however, is too restrictive. A more flexible extension would be to allow the conditional correlation matrix $R_t$ to evolve according to an autoregressive process driven by lagged values of the standardized returns. This is most elegantly done by the DCC model of \textcite{ENGLE2002}, where the stochastic process for the matrix $R_t$ is defined through a pseudo-correlation matrix, $Q_t$, as:
+\begin{align}
+	Q_t &= (1 - \alpha - \beta) S + \alpha \varepsilon_{t-1} \varepsilon_{t-1}^\prime + \beta Q_{t-1}, \label{eq:sec2_dcc_q} \\
+	R_t &= \operatorname{Diag}(Q_t)^{-1/2} Q_t \operatorname{Diag}(Q_t)^{-1/2}, \label{eq:sec2_dcc_r}
+\end{align}
+where $\operatorname{Diag}(\cdot)$ is an operator that sets to zero all the off-diagonal entries of its input, and $S$ is the unconditional correlation matrix of the standardized returns. The specification in \eqref{eq:sec2_dcc_q} is rather arbitrary. It is possible to include more lags in the process or consider full matrices instead of the scalar parameters $\alpha$ and $\beta$. Nonetheless, in order to keep the models light and maintain the focus on the large-dimensional paradigm, only the scalar version of the model with one lag will be considered. 
+
+Estimation of the DCC model is usually done by maximum likelihood. It is common to assume that the innovations in the return process follow a multivariate normal distribution, in which case the likelihood function is naturally computed from the density of the multivariate normal law. In the absence of the assumption of normality, the multivariate normal law can still be used, with the only caveat that the maximum likelihood estimator will be based on a misspecified likelihood function, which results in a quasi-maximum likelihood estimator. Let $\theta$ collect the parameters of the matrix of conditional volatilities $D_t(\theta)$, and $\phi$ the parameters of the conditional correlation matrix $R_t(\phi)$. The joint log-likelihood for the DCC model can be written, up to a constant, as:
+\begin{align}
+	\mathcal{L}(\theta,\phi,S) = -\frac{1}{2} \sum_{t=1}^T \left( \operatorname{log} \left( |H_t(\theta,\phi,S)| \right) + X_t^\prime H_t^{-1}(\theta,\phi,S)X_t \right),
+\end{align}
+where the dependence of the conditional covariance matrix $H_t(\theta,\phi,S)$ on the parameters $\theta$, $\phi$, and $S$ is made explicit. Substituting $H_t(\theta,\phi,S)$ with the expression in \eqref{eq:sec2_vol-corr-decomp} in the log-likelihood function expressed above yields the following set of expressions:
+\begin{align}
+	\mathcal{L}(\theta,\phi,S) &= -\frac{1}{2} \sum_{t=1}^T \left( \operatorname{log}(|D_tR_tD_t|) + X_t^\prime D_t^{-1}R_t^{-1}D_t^{-1}X_t \right) \\
+	&= - \frac{1}{2} \sum_{t=1}^T \left( \operatorname{log}(|D_t|^2) + \operatorname{log}(|R_t|) + \varepsilon_{t}^\prime R_t^{-1} \varepsilon_{t} \right) \\
+	&= - \frac{1}{2} \sum_{t=1}^T \left( 2\operatorname{log}(|D_t|) + X_t^\prime D_t^{-1} D_t^{-1}X_t - \varepsilon_{t}^\prime \varepsilon_{t} + \operatorname{log}(|R_t|) + \varepsilon_{t}^\prime R_t^{-1} \varepsilon_{t} \right) \\
+	&= - \frac{1}{2} \sum_{t=1}^T \left( 2\operatorname{log}(|D_t|) + X_t^\prime D_t^{-2}X_t \right) - \frac{1}{2} \sum_{t=1}^T \left( \operatorname{log}(|R_t|) + \varepsilon_{t}^\prime R_t^{-1}\varepsilon_{t} - \varepsilon_{t}^\prime \varepsilon_{t} \right), \label{eq:sec2_dcc_log_like_1}
+\end{align}
+where in the second line the multiplicative property of the determinant has been used to decompose the determinant, and in the third line the definition of the standardized returns $\varepsilon_{t}$ to add and subtract the terms $X_t^\prime D_t^{-1}D_t^{-1}X_t$ and $\varepsilon_{t}^\prime \varepsilon_{t}$. One of the main features of the DCC model is that the parameters of the volatility and correlation processes can be estimated separately. Indeed, the log-likelihood function expressed in \eqref{eq:sec2_dcc_log_like_1} can be written as the sum of two log-likelihoods:
+\begin{align}
+	\mathcal{L}(\theta, \phi, S) = - \frac{1}{2} \sum_{t=1}^T \left( 2\operatorname{log}(|D_t|) + X_t^\prime D_t^{-2}X_t \right) - \frac{1}{2} \sum_{t=1}^T \left( \operatorname{log}(|R_t|) + \varepsilon_{t}^\prime R_t^{-1}\varepsilon_{t} - \varepsilon_{t}^\prime \varepsilon_{t} \right),
+\end{align}
+where the first term is equal to the sum of the log-likelihoods of the individual univariate GARCH processes, and the second term is the log-likelihood of the conditional correlation model. The log-likelihood function can be written in more compact notation as:
+\begin{align}
+	\mathcal{L}(\theta, \phi, S) = \mathcal{L}_v(\theta) + \mathcal{L}_c(\theta,\phi,S).
+\end{align}
+It is easy to see that the first term is equal to:
+\begin{align}
+	\mathcal{L}_v(\theta) &= -\frac{1}{2} \sum_{t=1}^T \left( \operatorname{log}(|D_t|^2) + X_t^\prime D_t^{-2} X_t \right) = -\frac{1}{2} \sum_{t=1}^T \left( \sum_{i=1}^N \left( \operatorname{log}\left(d_{i,t}^2\right) + \frac{r_{i,t}^2}{d_{i,t}^2} \right) \right) \\
+	&= - \frac{1}{2} \sum_{i=1}^N\sum_{t=1}^T \left( \operatorname{log}\left( d_{i,t}^2 \right) + \frac{r_{i,t}^2}{d_{i,t}^2} \right),
+\end{align}
+where $d_{i,t}^2 = \operatorname{Var}(r_{i,t}|\mathcal{F}_{t-1})$ is the conditional variance of the return series $i$ at time $t$. Full-information maximum likelihood estimation of the DCC model then proceeds by first maximizing the volatility term, $\mathcal{L}_v(\theta)$, which is equivalent to maximizing the likelihood of each univariate GARCH process:
+\begin{align}
+	\widehat{\theta} = \text{arg}\, \max_{\theta}{\mathcal{L}_v(\theta)}.
+\end{align}
+Once estimates of the univariate GARCH parameters, $\widehat{\theta}$, are obtained, the likelihood of the conditional correlation process is maximized as:
+\begin{align}
+	\max_{\phi, S}{\mathcal{L}_c(\widehat{\theta},\phi,S)}.
+\end{align}
+The maximization problem above yields estimates of the conditional correlation parameters, $\widehat{\phi}$, and the unconditional correlation matrix, $\widehat{S}$. A common practice, however, is to estimate the unconditional correlation matrix $\widehat{S}$ by an estimator other than the maximum likelihood. This approach is called correlation targeting (see \textcite{ENGLE2009}, Ch. 11) and involves an intermediate step that estimates the matrix $\widehat{S}$ before maximizing the likelihood of the correlation process parameters. This estimator takes the form of a function of the estimated volatility parameters $\widehat{\theta}$ and can be expressed in abstract terms as:
+\begin{align}
+	\widehat{S} = g(\widehat{\theta}).
+\end{align}
+A typical choice, for example, would be to set the function $g(\cdot)$ to the function that computes the sample second moment of the standardized residuals, in which case the resulting estimator would be the sample covariance matrix. Following the correlation targeting estimation technique, the parameters of the correlation process are estimated over the space of the conditional correlation parameters only, and the maximum likelihood estimator is defined as:
+\begin{align}
+	\widehat{\phi} = \text{arg}\, \max_{\phi}{\mathcal{L}_c( \widehat{\theta},\phi,\widehat{S})}.
+\end{align}
+A closely related model to the DCC is the cDCC (consistent DCC) model proposed by \textcite{AIELLI2013}. The motivation behind this model is to correct for the inconsistency of the sample covariance matrix of the standardized returns in the correlation targeting step. He shows that the sample covariance matrix of the standardized returns is a biased estimator for the intercept matrix $S$ in the process due to the fact that $\mathbb{E}[\varepsilon_t\varepsilon_t^\prime] \neq \mathbb{E}[Q_t]$. Therefore, he proposes a slightly modified process for the pseudo-correlation matrix $Q_t$ that involves lagged values of the standardized returns scaled by the square root of the diagonal entries of the pseudo-correlation matrix itself:
+\begin{align}
+	Q_t &= (1-\alpha-\beta) \Psi + \alpha \varepsilon_{t-1}^{*} \varepsilon_{t-1}^{*\prime} + \beta Q_{t-1}, \\
+	\varepsilon_{t}^* &= Diag(Q_t)^{1/2}\varepsilon_t.
+\end{align}
+This way, the intercept matrix in the model, $\Psi$, is guaranteed to equal the unconditional second moment of the scaled standardized returns $\varepsilon_t^*$. Although the inconsistency issue highlighted by \textcite{AIELLI2013} is an important one, the salient problem here is much more far-reaching and is related to the large dimensionality of the intercept matrix in the model. As will be discussed later at length in Section \ref{sec:shrink} of this article, any sample covariance matrix is biased and inconsistent in large dimensions. Furthermore, several authors, including \textcite{HAFNER2012} and \textcite{ELW2019}, found that the cDCC model yields very similar results to the DCC model, and that the difference between the two is small and negligible in practical settings. For the reasons mentioned above, the focus of the present article will remain on the original formulation of the DCC model.
+\subsection{Modeling Issues in Large Dimensions}
+Maximization of the log-likelihood function of the dynamic correlation parameters, $\mathcal{L}_c(\widehat{\theta},\phi,\widehat{S})$, requires computing the inverse of the conditional correlation matrix $R_t$ at each point in time. The computation cost of this operation increases rapidly with the dimension of the matrix. For inverting a matrix of dimension $N$, the number of operations that need to be carried out is of the order of $O(N^3)$. In a large-dimensional setup where the matrix dimension, $N$, is a considerably large number, this can pose a real practical issue and make the maximum likelihood estimation of the parameters significantly slow.
+
+In addition to the high computation cost mentioned above, inverting the conditional correlation matrix, $R_t$, entails a potentially very large statistical efficiency cost. It is well known that in large dimensions, the sample covariance matrix is highly inefficient and ill-conditioned. This is also evident from its spectrum, where the largest eigenvalues tend to be biased upward and the smallest ones downward. With so many of the eigenvalues biased toward zero, the sample covariance matrix tends to be ill-conditioned, which means that inverting it would dramatically increase estimation error. The ill-conditionedness of the sample covariance matrix naturally propagates through the conditional correlation matrix $R_t$ and contaminates the maximum likelihood estimates of the model parameters.
+
+For the reasons outlined above, it is desirable to devise an estimation methodology that is both cost-efficient and statistically robust in large dimensions. This can be achieved either by replacing the sample covariance matrix with a better-suited estimator, such as a shrinkage estimator, in the correlation targeting step, or by employing a form of a dimension reduction technique to reduce the dimension of the joint density in the computation of the likelihood function. In Section \ref{sec:shrink} we will discuss estimation based on shrinkage methods. In the following subsection, we will describe the composite likelihood method, which aims at approximating the full-dimensional joint likelihood of the model with combinations of lower-dimensional marginal densities. This ensures that the ill-conditionedness of the sample covariance matrix does not inflate estimation error of the maximum likelihood, and that the computation cost of inverting the conditional correlation matrices remains low.
+
+\subsection{Composite Likelihood Method}
+Consider the correlation dynamics process of the DCC model in \eqref{eq:sec2_dcc_q} and \eqref{eq:sec2_dcc_r}, and its log-likelihood function:
+\begin{align}
+	\mathcal{L}_c(\widehat{\theta},\phi,\widehat{S}) = -\frac{1}{2} \sum_{t=1}^T \left( \operatorname{log} \left( |R_t| \right) + \varepsilon_t^\prime R_t^{-1}\varepsilon_t - \varepsilon_t^\prime \varepsilon_t \right).
+\end{align}
+\textcite{PAKELETAL} propose approximating the log-likelihood function above with the average of the log-likelihoods of subsets of assets. In particular, they suggest selecting pairs of assets for constructing bivariate log-likelihoods which will then be averaged over the pairs. Let the letter $j$ that goes from $1$ to $K$ index the pairs of assets, where $K$ is the total number of the pairs. There are several different methods to select the pairs. One is to consider all possible combinations of pairs of assets, $K = \binom{N}{2}$. Alternatively, the selected subsets can be all the contiguous pairs, which results in a total of $K=N$ possible combinations, or the subsets can be chosen randomly. The simulation studies carried out by \textcite{PAKELETAL} show that there is very little difference between the results for the different types of subsets. To construct the log-likelihood function for asset pair $j$, the correlation dynamics process is first defined as:
+\begin{align}
+	Q_{j,t} &= (1-\alpha-\beta)S_{j} + \alpha \varepsilon_{j,t-1} \varepsilon_{j,t-1}^\prime + \beta Q_{j,t-1}, \\
+	R_{j,t} &= Diag(Q_{j,t})^{-1/2}Q_{j,t}Diag(Q_{j,t})^{-1/2},
+\end{align}
+where $\varepsilon_{j,t}$ is the vector of the standardized returns of asset pair $j$:
+\begin{align}
+	\varepsilon_{j,t} = \begin{pmatrix}
+		d_{1j,t} & 0 \\ 0 & d_{2j,t}
+	\end{pmatrix}^{-1/2} \begin{pmatrix}
+		r_{1j,t} \\ r_{2j,t}
+	\end{pmatrix}.
+\end{align}
+The unconditional correlation matrix $S_{j}$ is estimated by the sample covariance matrix of the standardized returns of the pair $\varepsilon_{j,t}$, and the log-likelihood of the dynamic correlation parameters is given by:
+\begin{align}
+	\mathcal{L}_{c,j}(\widehat{\theta}_j,\phi,\widehat{S}_j) = -\frac{1}{2} \sum_{t=1}^T \left( \operatorname{log}\left( |R_{j,t}| \right) + \varepsilon_{j,t}^\prime R_{j,t}^{-1}\varepsilon_{j,t} - \varepsilon_{j,t}^\prime \varepsilon_{j,t} \right).
+\end{align}
+It should be noted that the parameter vector $\phi$ is not pair-specific, but rather common across the log-likelihoods of all asset pairs. This is the main feature of the composite likelihood method, where information is pooled across the pairs. The full composite log-likelihood function is therefore given by:
+\begin{align}
+	\mathcal{L}_{c,CL}(\widehat{\theta},\phi) = \frac{1}{K} \sum_{j=1}^K \mathcal{L}_{c,j}(\widehat{\theta}_j,\phi,\widehat{S}_j).
+\end{align}
+
+Although, due to its fairly high level of complexity, a complete asymptotic theory is still missing for the DCC model, various simulation studies, including those contained in \textcite{PAKELETAL}, indicate that the composite likelihood method provides consistent estimates of the model parameters. Furthermore, the fact that correlation targeting takes place at the level of the asset subsets results in a more efficient estimate of the unconditional correlations of the returns. Finally, since the joint densities used for the computation of the log-likelihoods are bivariate, the inversion of the conditional correlation matrices in each of the likelihood functions is computationally cost-effective since the inverse of two-dimensional matrices is given by a simple analytical formula.
+
+A drawback of the composite likelihood method, however, is that it is less efficient than the full-information maximum likelihood estimator due to the approximation that takes place. When the full-information likelihood function is approximated with the average of bivariate likelihoods, the potential interdependence between the asset pairs is ignored, which can result in lower efficiency. When the dimension of the system is large, the large-dimensionality issue is more of a concern than the efficiency loss of the composite likelihood method; thus, this method can provide improved results. If, on the other hand, the dimension of the system is negligible or small compared to the available sample size, the efficiency losses can be huge and result in suboptimal results. This is a trade-off that needs to be considered when employing the composite likelihood method for maximum likelihood estimation. 
+
+This section introduced the DCC model and discussed its maximum likelihood estimation in large dimensions. The focus was primarily on reducing the dimension of the model by considering many lower-dimensional asset subsets. In the next section, we explore another estimation methodology that is based on shrinkage techniques.

@@ -1,0 +1,968 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{AIELLI2013}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5dcb796c0f62bc60c257707a017fd56f}{%
+           family={Aielli},
+           familyi={A\bibinitperiod},
+           given={Gian\bibnamedelima P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5dcb796c0f62bc60c257707a017fd56f}
+      \strng{fullhash}{5dcb796c0f62bc60c257707a017fd56f}
+      \strng{bibnamehash}{5dcb796c0f62bc60c257707a017fd56f}
+      \strng{authorbibnamehash}{5dcb796c0f62bc60c257707a017fd56f}
+      \strng{authornamehash}{5dcb796c0f62bc60c257707a017fd56f}
+      \strng{authorfullhash}{5dcb796c0f62bc60c257707a017fd56f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{3}
+      \field{title}{Dynamic Conditional Correlation: On Properties and Estimation}
+      \field{volume}{31}
+      \field{year}{2013}
+      \field{pages}{282\bibrangedash 299}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1080/07350015.2013.771027
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/07350015.2013.771027
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/07350015.2013.771027
+      \endverb
+    \endentry
+    \entry{BAUWENS}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6fbdea384d835bd3c37ca75c0edc372b}{%
+           family={Bauwens},
+           familyi={B\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75f7b0739e9cd6c037e87bed8f36c143}{%
+           family={Laurent},
+           familyi={L\bibinitperiod},
+           given={Sébastien},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5517f2d5b151f2665daa29e633fed7b9}{%
+           family={Rombouts},
+           familyi={R\bibinitperiod},
+           given={Jeroen\bibnamedelimb V.\bibnamedelimi K.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{ee67a22046b2befb3263a22337a46929}
+      \strng{fullhash}{2794a27c5b6ef2b7f4635cbf17aaad85}
+      \strng{bibnamehash}{2794a27c5b6ef2b7f4635cbf17aaad85}
+      \strng{authorbibnamehash}{2794a27c5b6ef2b7f4635cbf17aaad85}
+      \strng{authornamehash}{ee67a22046b2befb3263a22337a46929}
+      \strng{authorfullhash}{2794a27c5b6ef2b7f4635cbf17aaad85}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{08837252, 10991255}
+      \field{journaltitle}{Journal of Applied Econometrics}
+      \field{number}{1}
+      \field{title}{Multivariate Garch Models: A Survey}
+      \field{urlday}{14}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{21}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \field{pages}{79\bibrangedash 109}
+      \range{pages}{31}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/25146413
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/25146413
+      \endverb
+    \endentry
+    \entry{BOLLERSLEV1990}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=39f8f5a428abd62057a0152546172106}{%
+           family={Bollerslev},
+           familyi={B\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{39f8f5a428abd62057a0152546172106}
+      \strng{fullhash}{39f8f5a428abd62057a0152546172106}
+      \strng{bibnamehash}{39f8f5a428abd62057a0152546172106}
+      \strng{authorbibnamehash}{39f8f5a428abd62057a0152546172106}
+      \strng{authornamehash}{39f8f5a428abd62057a0152546172106}
+      \strng{authorfullhash}{39f8f5a428abd62057a0152546172106}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00346535, 15309142}
+      \field{journaltitle}{The Review of Economics and Statistics}
+      \field{number}{3}
+      \field{title}{Modelling the Coherence in Short-Run Nominal Exchange Rates: A Multivariate Generalized Arch Model}
+      \field{urlday}{7}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{72}
+      \field{year}{1990}
+      \field{urldateera}{ce}
+      \field{pages}{498\bibrangedash 505}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2109358
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2109358
+      \endverb
+    \endentry
+    \entry{DYSON1953}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=107f18cea36e2f8b65ea374dfbd66723}{%
+           family={Dyson},
+           familyi={D\bibinitperiod},
+           given={Freeman\bibnamedelima J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{fullhash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{bibnamehash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{authorbibnamehash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{authornamehash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{authorfullhash}{107f18cea36e2f8b65ea374dfbd66723}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{6}
+      \field{journaltitle}{Phys. Rev.}
+      \field{month}{12}
+      \field{title}{The Dynamics of a Disordered Linear Chain}
+      \field{volume}{92}
+      \field{year}{1953}
+      \field{pages}{1331\bibrangedash 1338}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1103/PhysRev.92.1331
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.92.1331
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.92.1331
+      \endverb
+    \endentry
+    \entry{ENGLE2002}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d491df6781389ebb4ef255c1ec0ca7ed}{%
+           family={Engle},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[American Statistical Association, Taylor \& Francis, Ltd.]}%
+      }
+      \strng{namehash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{fullhash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{bibnamehash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{authorbibnamehash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{authornamehash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{authorfullhash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \field{extraname}{1}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{07350015}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{3}
+      \field{title}{Dynamic Conditional Correlation: A Simple Class of Multivariate Generalized Autoregressive Conditional Heteroskedasticity Models}
+      \field{urlday}{7}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{20}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{pages}{339\bibrangedash 350}
+      \range{pages}{12}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/1392121
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1392121
+      \endverb
+    \endentry
+    \entry{ENGLE2009}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d491df6781389ebb4ef255c1ec0ca7ed}{%
+           family={Engle},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{fullhash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{bibnamehash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{authorbibnamehash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{authornamehash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \strng{authorfullhash}{d491df6781389ebb4ef255c1ec0ca7ed}
+      \field{extraname}{2}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780691116419}
+      \field{title}{Anticipating Correlations: A New Paradigm for Risk Management}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/j.ctt7sb6w
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/j.ctt7sb6w
+      \endverb
+    \endentry
+    \entry{ELW2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d491df6781389ebb4ef255c1ec0ca7ed}{%
+           family={Engle},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{441bd89e0278954f58ebc44cedcb6a47}
+      \strng{fullhash}{b22f18a289592e3f213fc4ddb9083d87}
+      \strng{bibnamehash}{b22f18a289592e3f213fc4ddb9083d87}
+      \strng{authorbibnamehash}{b22f18a289592e3f213fc4ddb9083d87}
+      \strng{authornamehash}{441bd89e0278954f58ebc44cedcb6a47}
+      \strng{authorfullhash}{b22f18a289592e3f213fc4ddb9083d87}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{Large Dynamic Covariance Matrices}
+      \field{volume}{37}
+      \field{year}{2019}
+      \field{pages}{363\bibrangedash 375}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1080/07350015.2017.1345683
+      \endverb
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/taf/jnlbes/v37y2019i2p363-375.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/taf/jnlbes/v37y2019i2p363-375.html
+      \endverb
+    \endentry
+    \entry{HAFNER2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9e21fa49d302e2050bf1fcce3f488025}{%
+           family={Hafner},
+           familyi={H\bibinitperiod},
+           given={Christian\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f4dc412df854b5437189c1fd79f47d5}{%
+           family={Reznikova},
+           familyi={R\bibinitperiod},
+           given={Olga},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{efcf4b826b39bbd1d48c82f7e9307662}
+      \strng{fullhash}{efcf4b826b39bbd1d48c82f7e9307662}
+      \strng{bibnamehash}{efcf4b826b39bbd1d48c82f7e9307662}
+      \strng{authorbibnamehash}{efcf4b826b39bbd1d48c82f7e9307662}
+      \strng{authornamehash}{efcf4b826b39bbd1d48c82f7e9307662}
+      \strng{authorfullhash}{efcf4b826b39bbd1d48c82f7e9307662}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0167-9473}
+      \field{journaltitle}{Computational Statistics \& Data Analysis}
+      \field{note}{1st issue of the Annals of Computational and Financial Econometrics Sixth Special Issue on Computational Econometrics}
+      \field{number}{11}
+      \field{title}{On the estimation of dynamic conditional correlation models}
+      \field{volume}{56}
+      \field{year}{2012}
+      \field{pages}{3533\bibrangedash 3545}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.csda.2010.09.022
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167947310003658
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167947310003658
+      \endverb
+      \keyw{DCC,Shrinkage,Sample covariance matrix,Financial time series}
+    \endentry
+    \entry{LEDOITPECHE2011}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35e5017a7091843451cd6707bdea8f21}{%
+           family={Péché},
+           familyi={P\bibinitperiod},
+           given={Sandrine},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fe9ad0f8ef4057389b23809ee043035d}
+      \strng{fullhash}{fe9ad0f8ef4057389b23809ee043035d}
+      \strng{bibnamehash}{fe9ad0f8ef4057389b23809ee043035d}
+      \strng{authorbibnamehash}{fe9ad0f8ef4057389b23809ee043035d}
+      \strng{authornamehash}{fe9ad0f8ef4057389b23809ee043035d}
+      \strng{authorfullhash}{fe9ad0f8ef4057389b23809ee043035d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-2064}
+      \field{journaltitle}{Probability Theory and Related Fields}
+      \field{title}{Eigenvectors of some large sample covariance matrix ensembles}
+      \field{volume}{151}
+      \field{year}{2011}
+      \field{pages}{233\bibrangedash 264}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1007/s00440-010-0298-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00440-010-0298-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00440-010-0298-3
+      \endverb
+    \endentry
+    \entry{LEDOITWOLF2004}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0047-259X}
+      \field{journaltitle}{Journal of Multivariate Analysis}
+      \field{number}{2}
+      \field{title}{A well-conditioned estimator for large-dimensional covariance matrices}
+      \field{volume}{88}
+      \field{year}{2004}
+      \field{pages}{365\bibrangedash 411}
+      \range{pages}{47}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0047-259X(03)00096-4
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047259X03000964
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047259X03000964
+      \endverb
+    \endentry
+    \entry{LEDOITWOLF2004_HONEY}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Portfolio Management}
+      \field{number}{4}
+      \field{title}{Honey, I Shrunk the Sample Covariance Matrix}
+      \field{volume}{30}
+      \field{year}{2004}
+      \field{pages}{110\bibrangedash 119}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.3905/jpm.2004.110
+      \endverb
+    \endentry
+    \entry{LEDOITWOLF2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{number}{2}
+      \field{title}{Nonlinear shrinkage estimation of large-dimensional covariance matrices}
+      \field{volume}{40}
+      \field{year}{2012}
+      \field{pages}{1024\bibrangedash 1060}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1214/12-AOS989
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1214/12-AOS989
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1214/12-AOS989
+      \endverb
+      \keyw{Large-dimensional asymptotics,nonlinear shrinkage,rotation equivariance}
+    \endentry
+    \entry{LEDOITWOLF2015}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Multivariate Analysis}
+      \field{month}{4}
+      \field{number}{C}
+      \field{title}{Spectrum estimation: A unified framework for covariance matrix estimation and PCA in large dimensions}
+      \field{volume}{139}
+      \field{year}{2015}
+      \field{pages}{360\bibrangedash 384}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/j.jmva.2015.04.006
+      \endverb
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/eee/jmvana/v139y2015icp360-384.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/eee/jmvana/v139y2015icp360-384.html
+      \endverb
+    \endentry
+    \entry{LEDOITWOLF2017_QUEST}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0167-9473}
+      \field{journaltitle}{Computational Statistics \& Data Analysis}
+      \field{title}{Numerical implementation of the QuEST function}
+      \field{volume}{115}
+      \field{year}{2017}
+      \field{pages}{199\bibrangedash 223}
+      \range{pages}{25}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.csda.2017.06.004
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167947317301433
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167947317301433
+      \endverb
+    \endentry
+    \entry{MP1967}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f293d7069bd6db41bbcce05b70a5ab21}{%
+           family={Marčenko},
+           familyi={M\bibinitperiod},
+           given={Volodymyr\bibnamedelima A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d99abd103c013ce0aabb4d3342e9c7e}{%
+           family={Pastur},
+           familyi={P\bibinitperiod},
+           given={Leonid\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cd3eb0b4689ad817167c6318dc221c37}
+      \strng{fullhash}{cd3eb0b4689ad817167c6318dc221c37}
+      \strng{bibnamehash}{cd3eb0b4689ad817167c6318dc221c37}
+      \strng{authorbibnamehash}{cd3eb0b4689ad817167c6318dc221c37}
+      \strng{authornamehash}{cd3eb0b4689ad817167c6318dc221c37}
+      \strng{authorfullhash}{cd3eb0b4689ad817167c6318dc221c37}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics of the USSR-Sbornik}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Distribution of Eigenvalues For Some Sets of Random Matrices}
+      \field{volume}{1}
+      \field{year}{1967}
+      \field{pages}{457}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1070/SM1967v001n04ABEH001994
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1070/SM1967v001n04ABEH001994
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1070/SM1967v001n04ABEH001994
+      \endverb
+    \endentry
+    \entry{PAKELETAL}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=680a0f0ee02c2cf080d78f178bfbcd1d}{%
+           family={Pakel},
+           familyi={P\bibinitperiod},
+           given={Cavit},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=297d9c8d6a4dcfbed876803d5cbba67b}{%
+           family={Shephard},
+           familyi={S\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22fcbc93c38819e962968aad3e3cba7f}{%
+           family={Sheppard},
+           familyi={S\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d491df6781389ebb4ef255c1ec0ca7ed}{%
+           family={Engle},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{03135880f36c570e5b1a4781c7fd30ef}
+      \strng{fullhash}{6563adb414ef4a568b10bc33104845a4}
+      \strng{bibnamehash}{03135880f36c570e5b1a4781c7fd30ef}
+      \strng{authorbibnamehash}{03135880f36c570e5b1a4781c7fd30ef}
+      \strng{authornamehash}{03135880f36c570e5b1a4781c7fd30ef}
+      \strng{authorfullhash}{6563adb414ef4a568b10bc33104845a4}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{3}
+      \field{title}{Fitting Vast Dimensional Time-Varying Covariance Models}
+      \field{volume}{39}
+      \field{year}{2021}
+      \field{pages}{652\bibrangedash 668}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1080/07350015.2020.1713795
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/07350015.2020.1713795
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/07350015.2020.1713795
+      \endverb
+    \endentry
+    \entry{SILVERSTEIN1995}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=81074efde8ff01e2a5d0b586c824209c}{%
+           family={Silverstein},
+           familyi={S\bibinitperiod},
+           given={Jack\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{81074efde8ff01e2a5d0b586c824209c}
+      \strng{fullhash}{81074efde8ff01e2a5d0b586c824209c}
+      \strng{bibnamehash}{81074efde8ff01e2a5d0b586c824209c}
+      \strng{authorbibnamehash}{81074efde8ff01e2a5d0b586c824209c}
+      \strng{authornamehash}{81074efde8ff01e2a5d0b586c824209c}
+      \strng{authorfullhash}{81074efde8ff01e2a5d0b586c824209c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0047-259X}
+      \field{journaltitle}{Journal of Multivariate Analysis}
+      \field{number}{2}
+      \field{title}{Strong Convergence of the Empirical Distribution of Eigenvalues of Large Dimensional Random Matrices}
+      \field{volume}{55}
+      \field{year}{1995}
+      \field{pages}{331\bibrangedash 339}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1006/jmva.1995.1083
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047259X85710834
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047259X85710834
+      \endverb
+    \endentry
+    \entry{SILVERSTEINBAI1995}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=81074efde8ff01e2a5d0b586c824209c}{%
+           family={Silverstein},
+           familyi={S\bibinitperiod},
+           given={Jack\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e0f5405a13082b5bc9453a49ca88cf1}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Zhidong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1643a76fe1097a1c6da0a3f24404f6ef}
+      \strng{fullhash}{1643a76fe1097a1c6da0a3f24404f6ef}
+      \strng{bibnamehash}{1643a76fe1097a1c6da0a3f24404f6ef}
+      \strng{authorbibnamehash}{1643a76fe1097a1c6da0a3f24404f6ef}
+      \strng{authornamehash}{1643a76fe1097a1c6da0a3f24404f6ef}
+      \strng{authorfullhash}{1643a76fe1097a1c6da0a3f24404f6ef}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0047-259X}
+      \field{journaltitle}{Journal of Multivariate Analysis}
+      \field{number}{2}
+      \field{title}{On the Empirical Distribution of Eigenvalues of a Class of Large Dimensional Random Matrices}
+      \field{volume}{54}
+      \field{year}{1995}
+      \field{pages}{175\bibrangedash 192}
+      \range{pages}{18}
+      \verb{doi}
+      \verb https://doi.org/10.1006/jmva.1995.1051
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047259X85710512
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047259X85710512
+      \endverb
+    \endentry
+    \entry{SILVERSTEIN_CHOI_1995}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=81074efde8ff01e2a5d0b586c824209c}{%
+           family={Silverstein},
+           familyi={S\bibinitperiod},
+           given={Jack\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3f8c60827f171e6b2de61e8c04da5d2}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Sang-Il},
+           giveni={S\bibinithyphendelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0c86f2c2b24907c9add6c2e592f01742}
+      \strng{fullhash}{0c86f2c2b24907c9add6c2e592f01742}
+      \strng{bibnamehash}{0c86f2c2b24907c9add6c2e592f01742}
+      \strng{authorbibnamehash}{0c86f2c2b24907c9add6c2e592f01742}
+      \strng{authornamehash}{0c86f2c2b24907c9add6c2e592f01742}
+      \strng{authorfullhash}{0c86f2c2b24907c9add6c2e592f01742}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0047-259X}
+      \field{journaltitle}{Journal of Multivariate Analysis}
+      \field{number}{2}
+      \field{title}{Analysis of the Limiting Spectral Distribution of Large Dimensional Random Matrices}
+      \field{volume}{54}
+      \field{year}{1995}
+      \field{pages}{295\bibrangedash 309}
+      \range{pages}{15}
+      \verb{doi}
+      \verb https://doi.org/10.1006/jmva.1995.1058
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047259X85710585
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047259X85710585
+      \endverb
+    \endentry
+    \entry{WIGNER1958}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=70f36b602c1e67b26a7562f4998a043b}{%
+           family={Wigner},
+           familyi={W\bibinitperiod},
+           given={Eugen\bibnamedelima P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Annals of Mathematics}%
+      }
+      \strng{namehash}{70f36b602c1e67b26a7562f4998a043b}
+      \strng{fullhash}{70f36b602c1e67b26a7562f4998a043b}
+      \strng{bibnamehash}{70f36b602c1e67b26a7562f4998a043b}
+      \strng{authorbibnamehash}{70f36b602c1e67b26a7562f4998a043b}
+      \strng{authornamehash}{70f36b602c1e67b26a7562f4998a043b}
+      \strng{authorfullhash}{70f36b602c1e67b26a7562f4998a043b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev.}
+      \field{title}{On the Distribution of the Roots of Certain Symmetric Matrices}
+      \field{volume}{67}
+      \field{year}{1958}
+      \field{pages}{325\bibrangedash 326}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.2307/1970008
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.2307/1970008
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.2307/1970008
+      \endverb
+    \endentry
+    \entry{WISHART1928}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=90918146b384ebb486287d1f960f94ce}{%
+           family={Wishart},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{90918146b384ebb486287d1f960f94ce}
+      \strng{fullhash}{90918146b384ebb486287d1f960f94ce}
+      \strng{bibnamehash}{90918146b384ebb486287d1f960f94ce}
+      \strng{authorbibnamehash}{90918146b384ebb486287d1f960f94ce}
+      \strng{authornamehash}{90918146b384ebb486287d1f960f94ce}
+      \strng{authorfullhash}{90918146b384ebb486287d1f960f94ce}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0006-3444}
+      \field{journaltitle}{Biometrika}
+      \field{month}{12}
+      \field{number}{1-2}
+      \field{title}{The Generalised Product Moment Distribution In Samples From a Normal Multivariate Population}
+      \field{volume}{20A}
+      \field{year}{1928}
+      \field{pages}{32\bibrangedash 52}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1093/biomet/20A.1-2.32
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/biomet/article-pdf/20A/1-2/32/530655/20A-1-2-32.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/biomet/20A.1-2.32
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/biomet/20A.1-2.32
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
